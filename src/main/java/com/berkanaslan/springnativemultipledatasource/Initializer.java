@@ -20,7 +20,23 @@ public class Initializer implements ApplicationListener<ApplicationReadyEvent> {
 
     @Override
     public void onApplicationEvent(ApplicationReadyEvent event) {
+        savePerson();
+        saveProduct();
+    }
+    
+    private void savePerson() {
+        if (personRepository.count() > 0) {
+            return;
+        }
+
         personRepository.save(new Person("Berkan", Person.Gender.MALE));
+    }
+
+    private void saveProduct() {
+        if (productRepository.count() > 0) {
+            return;
+        }
+
         productRepository.save(new Product("AZ001", "Razer Kraken V3 PRO", BigDecimal.valueOf(299.90)));
     }
 }
