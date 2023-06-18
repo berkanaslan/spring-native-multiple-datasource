@@ -23,7 +23,7 @@ public class Initializer implements ApplicationListener<ApplicationReadyEvent> {
         savePerson();
         saveProduct();
     }
-    
+
     private void savePerson() {
         if (personRepository.count() > 0) {
             return;
