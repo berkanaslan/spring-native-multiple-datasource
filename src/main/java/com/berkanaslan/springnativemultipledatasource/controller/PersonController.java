@@ -1,7 +1,7 @@
 package com.berkanaslan.springnativemultipledatasource.controller;
 
-import com.berkanaslan.springnativemultipledatasource.model.Person;
-import com.berkanaslan.springnativemultipledatasource.repository.PersonRepository;
+import com.berkanaslan.springnativemultipledatasource.model.person.Person;
+import com.berkanaslan.springnativemultipledatasource.repository.person.PersonRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

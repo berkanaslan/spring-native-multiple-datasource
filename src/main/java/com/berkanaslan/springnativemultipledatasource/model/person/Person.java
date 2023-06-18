@@ -1,4 +1,4 @@
-package com.berkanaslan.springnativemultipledatasource.model;
+package com.berkanaslan.springnativemultipledatasource.model.person;
 
 import jakarta.persistence.*;
 import lombok.Getter;
