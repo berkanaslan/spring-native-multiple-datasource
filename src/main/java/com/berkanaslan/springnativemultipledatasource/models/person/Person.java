@@ -1,4 +1,4 @@
-package com.berkanaslan.springnativemultipledatasource.model.person;
+package com.berkanaslan.springnativemultipledatasource.models.person;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
+@Table(name = "person")
 @Getter
 @Setter
 @NoArgsConstructor

@@ -1,6 +1,6 @@
-package com.berkanaslan.springnativemultipledatasource.repository.person;
+package com.berkanaslan.springnativemultipledatasource.repositories.person;
 
-import com.berkanaslan.springnativemultipledatasource.model.person.Person;
+import com.berkanaslan.springnativemultipledatasource.models.person.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

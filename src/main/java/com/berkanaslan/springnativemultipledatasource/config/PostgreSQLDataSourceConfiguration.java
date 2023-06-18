@@ -21,7 +21,7 @@ import javax.sql.DataSource;
 @EnableJpaRepositories(
         entityManagerFactoryRef = "postgresEntitiesManagerFactory",
         transactionManagerRef = "postgresEntitiesTransactionManager",
-        basePackages = {"com.berkanaslan.springnativemultipledatasource.repository.person"})
+        basePackages = {"com.berkanaslan.springnativemultipledatasource.repositories.person"})
 public class PostgreSQLDataSourceConfiguration {
 
     @Primary
@@ -43,7 +43,7 @@ public class PostgreSQLDataSourceConfiguration {
     public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean(EntityManagerFactoryBuilder entityManagerFactoryBuilder,
                                                                            @Qualifier("postgresDataSource") DataSource dataSource) {
         return entityManagerFactoryBuilder.dataSource(dataSource)
-                .packages("com.berkanaslan.springnativemultipledatasource.model.person")
+                .packages("com.berkanaslan.springnativemultipledatasource.models.person")
                 .persistenceUnit("person")
                 .build();
     }
