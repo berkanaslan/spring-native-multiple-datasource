@@ -55,5 +55,5 @@ In the project, Java 17 is being used as the SDK. Consequently, please take into
 docker run --rm -p 8080:8080 spring-native-multiple-datasource:0.0.1-SNAPSHOT
 ```
 
-If you encounter any issues at this stage, you can refer to the [HELP.md](HELP.md) for assistance.
+If you encounter any issues at this stage, you can refer to the [documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/native-image.html) for assistance.
 
